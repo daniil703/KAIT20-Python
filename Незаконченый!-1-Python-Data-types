@@ -1,0 +1,25 @@
+#1 Задание
+integer_var = 5 # int/целое число
+float_var = 3.14 #float/число с плавающей строкой
+string_var = "KAIT 20" #str/строка
+list_var = [20, 35, 56, 23] #list/список
+tuple_var = (10, 20) # кортеж c словами/числами
+dict_var = {"Откачка": "Биотуалета", "Цена": "2990р"} #dict/словарь слов с подзначениями
+set_var = {5,6,7,8} #множества чисел
+bool_var = True #Логические значение true/false
+
+#2 Задание, применяем на примере анкеты
+Drive = 1
+Smeshariki = 2
+Last_name = "Nalimov"
+College = "KAIT20"
+name = "Даниил" 
+age = 17
+average_grade = 4.41
+favorite_movies = [1,2]
+personal_info = (Last_name, College, average_grade)
+skills = {
+    "Красноречивость": "профессиональный уровень владения",
+    "Английский язык": "продвинутый",
+    "Знание python": "начальный",
+}
