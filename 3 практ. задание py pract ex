@@ -1,0 +1,77 @@
+#1 задание
+number = float(input("Введите минуты, и я это преобразую!\n"))
+print(number / 60)
+print(number % 60)
+
+#2 задание
+sleep_hours = float(input("Сколько часов вы спите? Это поможет подобрать для вас режим сна\n"))
+sleep_count = 8
+sleep_count = 9
+if sleep_hours < sleep_count:
+    print("Количество вашего сна - недостаточно. В вашем возрасте полагается спать 8-9 часов")
+if sleep_hours == sleep_count:
+    print("Вы молодец! Ваше количество сна в пределах нормы")
+if sleep_hours > 9:
+    print("Вы спите слишком много, слишком долгий сон может наоборот ухудшить ваше состояние")
+
+# 3 задание
+import math
+a = float(input("Введите длину стороны a: "))
+b = float(input("Введите длину стороны b: "))
+c = float(input("Введите длину стороны c: "))
+
+p = (a + b + c) / 2
+
+area = math.sqrt(p * (p - a) * (p - b) * (p - c))
+
+print(f"Площадь треугольника: {area:.2f}")
+
+# 4 задание
+import math
+def calculate_area():
+    print("Какой у вас тип комнаты?")
+    print("1. Треугольная")
+    print("2. Прямоугольная")
+    print("3. Круглая")
+
+    choice = int(input("Введите номер типа комнаты (1/2/3): "))
+
+    if choice == 1:
+        a = float(input("Введите длину стороны a: "))
+        b = float(input("Введите длину стороны b: "))
+        c = float(input("Введите длину стороны c: "))
+
+        p = (a + b + c) / 2
+        area = math.sqrt(p * (p - a) * (p - b) * (p - c))
+        print(f"Площадь треугольной комнаты: {area:.2f}")
+
+    elif choice == 2:
+        length = float(input("Введите длину комнаты: "))
+        width = float(input("Введите ширину комнаты: "))
+        area = length * width
+        print(f"Площадь прямоугольной комнаты: {area:.2f}")
+
+    elif choice == 3:
+        radius = float(input("Введите радиус комнаты: "))
+        area = math.pi * (radius ** 2)
+        print(f"Площадь круглой комнаты: {area:.2f}")
+
+    else:
+        print("Неверный выбор, выберите 1, 2 либо 3 вариант.")
+
+
+calculate_area()
+
+#5 задание
+prog1 = Программист
+prog2 = Программиста
+prog3 = Программистов
+z = int("Сколько программистов находятся в этой комнате?")
+if z == 0:
+    print(z,prog1)
+if z == 1:
+    print(z,prog1)
+if z > 1 and n < 5:
+    print(z,prog2)
+if z >= 5:
+    print(z,prog3)
