@@ -1,0 +1,31 @@
+#1 Задание
+input_str = input("Введите произвольную строку: ")
+if input_str[0] == input_str[-1]:
+    print("True")
+else:
+    print("False")
+
+#2 Задание
+num = int(input("Введите число: "))
+if num % 2 == 0:
+    result = num ** 2
+elif num % 3 == 0:
+    result = num ** 3
+else:
+    result = num * 100
+print(result)
+
+#3 Задание
+number1 = int(input("Введите первое число: "))
+number2 = int(input("Введите второе число: "))
+
+if number1 < 0 and number2 < 0:
+    print("False")
+elif number1 < 0:
+    number1 += 1000
+    print(number1, number2)
+elif number2 < 0:
+    number2 += 1000
+    print(number1, number2)
+else:
+    print("True")
